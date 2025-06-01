@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+/* Reset cơ bản */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+}
+
+/* App wrapper */
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+.App h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form chung */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Input text */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Checkbox + Label */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 8px;
+}
+
+/* Button chung */
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+button.delete-confirm {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.delete-cancel {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Danh sách todo */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Mỗi dòng todo */
+li {
+  background-color: #f1f3f5;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nội dung todo đã hoàn thành */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Nút trong từng item */
+li button {
+  margin-left: 6px;
+}
+
+/* Form sửa todo */
+form.edit-todo-form {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Hộp xác nhận xóa */
+.confirm-delete {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.confirm-delete p {
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.button-btn {
+  border-radius: 10%;
+  background: #6aa5d9;
+  color: #e9ecef;
+}
